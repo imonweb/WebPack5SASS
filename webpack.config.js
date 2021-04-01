@@ -1,14 +1,17 @@
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+
 module.exports = {
+  plugins: [new MiniCssExtractPlugin()],
   module: {
     rules: [
       {
         test: /\.(sc|c)ss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [ MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
         
       }
     ],
     
   },
-  devtool: false,
+  devtool: "source-map",
   
 };

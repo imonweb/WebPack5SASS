@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://WebPack5SASS/./src/index.js"],"names":["document","querySelector","innerText"],"mappings":"mBAIAA,SAASC,cAAc,MAAMC,UADZ,gB","file":"main.js","sourcesContent":["import './style.scss';\nimport './woof.css';\n\nconst headline = \"WebPack SASS\";\ndocument.querySelector(\"h1\").innerText = headline;"],"sourceRoot":""}
